@@ -15,8 +15,8 @@ const responsesByCategory = {
 			"Alex",
 			"Hal",
 			"Victoria",
-			"Lynda"
-			"Chloé",
+			"Lynda",
+			"Chloé"
 		],
 		response: "OMG, is that you?! 🤩 Of course yes! 💘",
 	},
