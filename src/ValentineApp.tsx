@@ -4,8 +4,6 @@ import "./ValentineApp.css";
 const responsesByCategory = {
 	yes: {
 		names: [
-			"Betty",
-			"Eva",
 			"Giulia",
 			"Noli",
 			"Julie",
@@ -17,44 +15,47 @@ const responsesByCategory = {
 			"Alex",
 			"Hal",
 			"Victoria",
+			"Lynda"
+			"Chloé",
 		],
 		response: "OMG, is that you?! 🤩 Of course yes! 💘",
 	},
+	yes_in_french: {
+		names: ["Betty", "Eva", "Nao", "Naomi"],
+		response: "OMG c'est toi ? 🤩 Bien sûr que oui ! 💘",
+	},
 	wait_what: {
-		names: ["Benjamin", "Florian", "Laurent", "Léo", "Camille", "Tom"],
-		response: "Oh really? 💘 Are you sure? 😏",
+		names: ["Florian", "Laurent", "Camille", "Tom"],
+		response: "Oh really? 💘 Let's give it a shot! 😏",
 	},
 	for_life: {
-		names: ["Poly", "Kadidia", "Gustave", "Bébé", "Chris"],
+		names: ["Poly", "Kadidia", "Gustave", "Chris", "Christophe"],
 		response: "You and me 💖 for life! 😍",
 	},
 	guys: {
-		names: [
-			"Julien",
-			"Juju",
-			"Kevin",
-			"Anthony",
-			"Victor",
-			"Mala",
-			"Malachai",
-			"Paul",
-			"Salvia",
-			"Thomas",
-		],
+		names: ["Kevin", "Victor"],
 		response: "Hahaha... Just kidding, right? 😂",
 	},
-	others: {
+	why_not_in_french: {
+		names: ["Julien", "Juju", "Chaton"],
+		response: "Si tu me cuisines un bananabread, peut-être...",
+	},
+	other: {
 		names: ["Beyoncé"],
 		response:
 			"Let me think... \n Just kidding, I've been waiting for you for so long! 💞",
 	},
 	nope: {
-		names: ["Jessy", "Sam", "Samvel"],
+		names: ["Anthony"],
 		response: "Nope 💀",
 	},
-	me_myself_and_i: {
+	joke: {
 		names: ["Agnès"],
 		response: "Can't wait until you get the gift of ubiquity! 😘",
+	},
+	this_year: {
+		names: ["Benjamin"],
+		response: "Can't wait to spend Valentine's Day with you! 💖",
 	},
 };
 
@@ -71,7 +72,7 @@ const getResponse = (name: string): string => {
 		}
 	}
 
-	return "Let's get to know each other first? 😊";
+	return "Let's get to know each other first 😊 \n Tell me why you want to be my Valentine";
 };
 
 const ValentineApp = () => {
