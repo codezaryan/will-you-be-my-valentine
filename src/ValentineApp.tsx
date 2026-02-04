@@ -72,7 +72,7 @@ const getResponse = (name: string): string => {
 		}
 	}
 
-	return "Let's get to know each other first 😊 \n Tell me why you want to be my Valentine";
+	return `You are my Valentine, ${name}! Lots of love 💖`;
 };
 
 const ValentineApp = () => {
