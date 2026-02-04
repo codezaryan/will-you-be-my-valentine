@@ -93,8 +93,8 @@ const ValentineApp = () => {
 	};
 
 	const moveNoButton = () => {
-		const maxX = window.innerWidth < 768 ? 100 : 200;
-		const maxY = window.innerWidth < 768 ? 100 : 200;
+		const maxX = 200;
+		const maxY = 200;
 		const newX = Math.random() * (maxX * 2) - maxX;
 		const newY = Math.random() * (maxY * 2) - maxY;
 		setNoPosition({ x: newX, y: newY });
@@ -206,6 +206,7 @@ const ValentineApp = () => {
 						className="px-6 py-3 sm:px-8 sm:py-4 text-lg md:text-xl font-bold bg-purple-500 text-white rounded-lg shadow-lg hover:bg-purple-400 transition-transform duration-300"
 						onMouseEnter={moveNoButton}
 						onFocus={moveNoButton}
+						onTouchStart={moveNoButton}
 						aria-label="No, I refuse"
 						style={{
 							transform: `translate(${noPosition.x}px, ${noPosition.y}px)`,
